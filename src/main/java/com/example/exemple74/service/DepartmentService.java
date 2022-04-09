@@ -11,8 +11,7 @@ import java.util.List;
 @Service
 public class DepartmentService {
 
-    public int save(Department department)
-    {
+    public int save(Department department) {
         Department entity = findByName(department.getName());
         if (entity != null) {
             return -1;
@@ -20,6 +19,15 @@ public class DepartmentService {
         else {
            departmentDao.save(department);
            return 1;
+        }
+    }
+
+    public int update(Department department){
+        Department department1 = findByName(department.getName());
+        if(department1!=null) return -1;
+        else{
+            departmentDao.save(department);
+            return 1;
         }
     }
 

@@ -22,6 +22,11 @@ public class DepartmentRest {
         return departmentService.findAll();
     }
 
+    @PutMapping("/")
+    public int update(@RequestBody Department department) {
+        return departmentService.update(department);
+    }
+
     @GetMapping("/name/{name}")
     public Department findByName(@PathVariable String name) {
         return departmentService.findByName(name);
@@ -31,6 +36,7 @@ public class DepartmentRest {
     public int deleteByName(@PathVariable String name) {
         return departmentService.deleteByName(name);
     }
+
 
     @Autowired
     private DepartmentService departmentService;
