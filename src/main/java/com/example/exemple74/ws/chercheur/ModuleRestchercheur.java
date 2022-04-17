@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/admin/module")
-public class ModuleRestAdmin {
+@RequestMapping("api/chercheur/module")
+public class ModuleRestchercheur {
 
     @PostMapping("/")
     public int save(@RequestBody Module module) {

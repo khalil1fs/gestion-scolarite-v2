@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/admin/inscription")
-public class InscriptionRestAdmin {
+@RequestMapping("api/chercheur/inscription")
+public class InscriptionRestchercheur {
 
     @PostMapping("/")
     public int save(@RequestBody Inscription inscription) {

@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/admin/paiment")
-public class PaimentRestAdmin {
+@RequestMapping("api/chercheur/paiment")
+public class PaimentRestchercheur {
 
     @PostMapping("/")
     public int save(@RequestBody Paiment paiment) {

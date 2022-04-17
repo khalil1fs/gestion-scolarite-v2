@@ -11,8 +11,8 @@ import java.util.List;
 /*   filiere ca marche   */
 
 @RestController
-@RequestMapping("api/admin/filiere")
-public class FiliereRestAdmin {
+@RequestMapping("api/chercheur/filiere")
+public class FiliereRestchercheur {
 
     @PostMapping("/")
     public int save(@RequestBody Filiere filiere) {
