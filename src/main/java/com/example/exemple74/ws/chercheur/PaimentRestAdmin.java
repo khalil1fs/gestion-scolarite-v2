@@ -1,4 +1,4 @@
-package com.example.exemple74.ws;
+package com.example.exemple74.ws.chercheur;
 
 import com.example.exemple74.bean.Paiment;
 import com.example.exemple74.service.PaimentService;
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/paiment")
-public class PaimentRest {
+@RequestMapping("api/admin/paiment")
+public class PaimentRestAdmin {
 
     @PostMapping("/")
     public int save(@RequestBody Paiment paiment) {

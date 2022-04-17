@@ -12,5 +12,4 @@ public interface PaimentDao extends JpaRepository<Paiment,Long> {
 
     List<Paiment> findByStudentCne(String cne);
 
-
 }

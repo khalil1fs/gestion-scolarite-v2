@@ -1,4 +1,4 @@
-package com.example.exemple74.ws;
+package com.example.exemple74.ws.admin;
 
 import com.example.exemple74.bean.Department;
 import com.example.exemple74.service.DepartmentService;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/department")
-public class DepartmentRest {
+@RequestMapping("api/admin/department")
+public class DepartmentRestAdmin {
 
     @PostMapping("/")
     public int save(@RequestBody Department department) {
