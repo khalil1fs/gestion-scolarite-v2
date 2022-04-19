@@ -1,16 +1,15 @@
-package com.example.exemple74.ws.admin;
+package com.example.exemple74.ws.rest.provided.facade.chercheur;
 
 import com.example.exemple74.bean.Department;
 import com.example.exemple74.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("api/admin/department")
-public class DepartmentRestAdmin {
+@RequestMapping("api/chercheur/department")
+public class DepartmentRestchercheur {
 
     @PostMapping("/")
     public int save(@RequestBody Department department) {

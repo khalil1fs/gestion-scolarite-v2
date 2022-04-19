@@ -1,4 +1,4 @@
-package com.example.exemple74.ws.admin;
+package com.example.exemple74.ws.rest.provided.facade.admin;
 
 import com.example.exemple74.Dao.NoteDao;
 import com.example.exemple74.service.NoteService;

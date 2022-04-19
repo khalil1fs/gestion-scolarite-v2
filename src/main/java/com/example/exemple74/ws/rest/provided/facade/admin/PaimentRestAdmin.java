@@ -1,4 +1,4 @@
-package com.example.exemple74.ws.chercheur;
+package com.example.exemple74.ws.rest.provided.facade.admin;
 
 import com.example.exemple74.bean.Paiment;
 import com.example.exemple74.service.PaimentService;
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/chercheur/paiment")
-public class PaimentRestchercheur {
+@RequestMapping("api/admin/paiment")
+public class PaimentRestAdmin {
 
     @PostMapping("/")
     public int save(@RequestBody Paiment paiment) {

@@ -1,4 +1,4 @@
-package com.example.exemple74.ws.chercheur;
+package com.example.exemple74.ws.rest.provided.facade.chercheur;
 
 
 import com.example.exemple74.bean.Module;
