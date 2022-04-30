@@ -12,7 +12,7 @@ import java.util.List;
 @Repository
 public interface StudentDao  extends JpaRepository<Student,Long> {
 
-    @Query("SELECT c FROM StudentVo c WHERE 1=1 order by c.id desc ")
+    @Query("SELECT c FROM Student c WHERE 1=1 order by c.id desc ")
     List<Student> findAll();
     Student findByCne(String cne);
     Student findByApoge(String apoge);

@@ -12,7 +12,7 @@ import java.util.List;
 public interface ProfDao  extends JpaRepository<Prof,Long> {
     Prof findByCin(String cin);
 
-    @Query("SELECT c FROM ProfVo c WHERE 1=1 order by c.id desc ")
+    @Query("SELECT c FROM Prof c WHERE 1=1 order by c.id desc ")
     List<Prof> findAll();
 
     int deleteByCin(String cin);

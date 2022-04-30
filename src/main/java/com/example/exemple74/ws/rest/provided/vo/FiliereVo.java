@@ -14,5 +14,5 @@ public class FiliereVo {
     private String id;
     private String nom;
     private List<InscriptionVo> inscriptionsVo;
-    private List<ModuleVo> modules;
+    private List<ModuleVo> modulesVo;
 }

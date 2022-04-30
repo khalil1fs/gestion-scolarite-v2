@@ -7,5 +7,5 @@ public class DepartmentVo {
     private String id;
     private String name;
 
-    private List<ProfVo> profs;
+    private List<ProfVo> profsVo;
 }

@@ -9,7 +9,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class Exemple74Application {
     public static ConfigurableApplicationContext ctx;
-
     public static void main(String[] args) {
       ctx =  SpringApplication.run(Exemple74Application.class, args);
     }
